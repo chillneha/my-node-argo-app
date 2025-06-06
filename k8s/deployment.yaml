@@ -1,0 +1,19 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: node-argo-app
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: node-argo-app
+  template:
+    metadata:
+      labels:
+        app: node-argo-app
+    spec:
+      containers:
+      - name: node-argo-app
+        image: yourdockerhubusername/node-argo-app:latest
+        ports:
+        - containerPort: 3000
