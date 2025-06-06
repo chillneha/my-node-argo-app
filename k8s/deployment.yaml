@@ -14,6 +14,6 @@ spec:
     spec:
       containers:
       - name: node-argo-app
-        image: yourdockerhubusername/node-argo-app:latest
+        image: neha1219/node-argo-app:latest
         ports:
         - containerPort: 3000
