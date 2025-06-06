@@ -26,4 +26,4 @@ jobs:
       with:
         context: ./app
         push: true
-        tags: yourdockerhubusername/node-argo-app:latest
+        tags: neha1219/node-argo-app:latest
